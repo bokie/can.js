@@ -1,0 +1,6 @@
+
+function urlParse () {
+
+}
+
+export { urlParse }

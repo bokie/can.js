@@ -1,0 +1,16 @@
+{
+  "name": "can",
+  "version": "1.0.0",
+  "description": "personal JavaScript utility library ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "bokie",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.0",
+    "mocha": "^5.1.0"
+  }
+}
