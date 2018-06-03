@@ -1,7 +1,9 @@
 /**
  * template - 简单的模板引擎
- * @param {string} tpl -填充模板
- * @param {object} data -填充数据
+ *
+ * @param  {string} tpl  - 填充模板
+ * @param  {object} data - 填充数据
+ * @return {string}
  *
  * @sample:
  * let tpl = '{{name}}, {{age}}';
@@ -14,9 +16,8 @@
  *
 */
 function template (tpl, data) {
-	return tpl.replace(/{{([^}}]+)?}}/g, function ($0, $1) {
-		return data[$1]
-	})
+    const pattern = /{{([^}}]+)?}}/g
+    return tpl.replace(pattern, ($0, $1) => data[$1])
 }
 
 export default template
